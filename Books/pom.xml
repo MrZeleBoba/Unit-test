@@ -5,14 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>unit-test</artifactId>
+    <artifactId>Books</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>Author</module>
-        <module>Book</module>
-        <module>Main</module>
-    </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
