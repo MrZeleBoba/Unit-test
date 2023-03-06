@@ -3,11 +3,11 @@ package org.example;
 import java.time.LocalDate;
 
 public class Books {
-    public String title;
-    public Author nameAuthor;
-    public int yearWrit;
-    public int rating;
-    public String text;
+    private String title;
+    private Author nameAuthor;
+    private int yearWrit;
+    private int rating;
+    private String text;
 
     public Books(String title, Author nameAuthor, int yearWrit, String text) {
         this.title = title;
@@ -24,8 +24,10 @@ public class Books {
 
     public void up() {
         if (rating < 5) {
-            rating++;
+            rating ++;
         }
+
+
     }
 
     public void down() {
