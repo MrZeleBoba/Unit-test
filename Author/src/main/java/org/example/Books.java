@@ -24,7 +24,7 @@ public class Books {
 
     public void up() {
         if (rating < 5) {
-            rating ++;
+            rating++;
         }
 
 

@@ -9,22 +9,22 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BooksTest {
 
-   private Author nameAuthor;
-   private Books books;
+    private Author nameAuthor;
+    private Books books;
 
     @BeforeEach
     public void bookTest() {
-         this.nameAuthor = new Author("Лев", "Толстой", 0);
-        this.books = new Books("Война и Мир", nameAuthor, LocalDate.now().getYear()," ");
+        this.nameAuthor = new Author("Лев", "Толстой", 0);
+        this.books = new Books("Война и Мир", nameAuthor, LocalDate.now().getYear(), " ");
     }
 
     @Test
     void upRatingTestLimitTest() {
-       Books actualBooks = books;
-       actualBooks.up();
-       actualBooks.up();
-       actualBooks.up();
-       assertEquals(books, actualBooks);
+        Books actualBooks = books;
+        actualBooks.up();
+        actualBooks.up();
+        actualBooks.up();
+        assertEquals(books, actualBooks);
 
     }
 
@@ -42,6 +42,6 @@ class BooksTest {
     void append() {
         Books actualBooks = books;
         actualBooks.append("$$$$$$");
-        assertEquals(books,actualBooks);
+        assertEquals(books, actualBooks);
     }
 }

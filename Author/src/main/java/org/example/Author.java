@@ -18,7 +18,7 @@ public class Author {
     }
 
     public Books newBooks(String title) {
-        Books books = new Books(title, this, LocalDate.now().getYear()," ");
+        Books books = new Books(title, this, LocalDate.now().getYear(), " ");
         return books;
     }
 }
